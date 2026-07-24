@@ -1,0 +1,32 @@
+---
+title: Overview
+seo:
+  title: Architecture Overview
+  description: High-level architecture of the project
+---
+
+## System Architecture
+
+```mermaid
+graph TD
+    A[Client] --> B[API Gateway]
+    B --> C[Auth Service]
+    B --> D[Core Service]
+    B --> E[Database]
+```
+
+## Key Components
+
+| Component | Description |
+|-----------|-------------|
+| Client | Frontend application |
+| API Gateway | Routes and rate limiting |
+| Auth Service | Authentication & authorization |
+| Core Service | Business logic |
+| Database | Data persistence |
+
+## Design Principles
+
+- **Modularity**: Components are loosely coupled
+- **Scalability**: Horizontal scaling support
+- **Security**: Defense in depth
